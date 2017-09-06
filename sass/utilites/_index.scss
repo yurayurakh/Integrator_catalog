@@ -1,20 +1,18 @@
 $main_font_size: 14px;
 $main_font_color: #0d0d0d;
-$green_color: #3bb038;
-$red_color: #ee1b1b;
-$border_color: #34e32f;
-$main_font_family: 'Open Sans';
-$main_font_familyBold: 'Open Sans Bold';
+$main_font_family: 'Open-Sans';
+$main_font_familyBold: 'Open-Sans-Bold';
 $bg_color: #ffffff;
 $line_height: 1.5em;
 
 @font-face {
-  font-family:'Open Sans Bold';
-  src: url('Open Sans Bold.eot');
-  src: url('Open Sans Bold.eot?#iefix') format('embedded-opentype'),
-  url('Open Sans Bold.woff2') format('woff2'),
-  url('Open Sans Bold.woff') format('woff'),
-  url('Open Sans Bold.svg#Open Sans Bold') format('svg');
+  font-family:'Open-Sans-Bold';
+  src: url('../fonts/OpenSans-Bold.ttf');
+  //src: url('../fonts/Open-Sans-Bold.eot');
+  //src: url('../fonts/Open-Sans-Bold.eot?#iefix') format('embedded-opentype'),
+ //url('../fonts/Open-Sans-Bold.woff2') format('woff2'),
+  //url('../fonts/Open-Sans-Bold.woff') format('woff'),
+  //url('../fonts/Open-Sans-Bold.svg#Open-Sans-Bold') format('svg');
   font-weight: 700;
   font-style: normal;
   font-stretch: normal;
@@ -22,12 +20,13 @@ $line_height: 1.5em;
 }
 
 @font-face {
-  font-family:'Open Sans';
-  src: url('Open Sans.eot');
-  src: url('Open Sans.eot?#iefix') format('embedded-opentype'),
-  url('Open Sans.woff2') format('woff2'),
-  url('Open Sans.woff') format('woff'),
-  url('Open Sans.svg#Open Sans') format('svg');
+  font-family:'Open-Sans';
+  src: url('../fonts/OpenSans-Regular.ttf');
+  //src: url('../fonts/Open-Sans.eot');
+  //src: url('../fonts/Open-Sans.eot?#iefix') format('embedded-opentype'),
+  //url('../fonts/Open-Sans.woff2') format('woff2'),
+  //url('../fonts/Open-Sans.woff') format('woff'),
+  //url('../fonts/Open-Sans.svg#Open-Sans') format('svg');
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
