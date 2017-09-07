@@ -7,23 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Integrator</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-1">
+                    <div class="col-sm-1 col-xs-2">
                         <a href="/" class="menu header__menu">
                             <img src="img/menu-icon.png" alt="menu-icon">
                         </a>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-md-3 col-sm-4 col-xs-10">
                         <a href="/" class="logo header__logo">
                             <img src="img/black-logo.png" alt="logo">
                         </a>
                     </div>
-                    <div class="col-sm-offset-2 col-sm-3">
+                    <div class="col-md-offset-2 col-sm-3 col-sm-offset-0 col-xs-offset-0 col-xs-12">
                         <div class="address header__address">
                             <div class="address-icon">
                                 <img src="img/address-icon.png" alt="address-icon">
@@ -39,7 +40,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
                         <div class="phone-block">
                             <div class="phone-icon">
                                 <img src="img/phone-icon.png" alt="phone-icon">
@@ -74,25 +75,25 @@
                     <div class="col-sm-10">
                         <ul class="categories">
                             <li class="categories__item">
-                                <a href="#" class="categories__link">Онлайн-кассы</a>
+                                <a href="#" class="categories__link checked-category" data-category="online-kassa">Онлайн-кассы</a>
                             </li>
                             <li class="categories__item">
-                                <a href="#" class="categories__link">POS-системы</a>
+                                <a href="#" class="categories__link" data-category="pos-system">POS-системы</a>
                             </li>
                             <li class="categories__item">
-                                <a href="#" class="categories__link">Фискальные накопители</a>
+                                <a href="#" class="categories__link" data-category="fix-nakopytel">Фискальные накопители</a>
                             </li>
                             <li class="categories__item">
-                                <a href="#" class="categories__link">Фискальные Регистраторы</a>
+                                <a href="#" class="categories__link" data-category="fix-register">Фискальные Регистраторы</a>
                             </li>
                             <li class="categories__item">
-                                <a href="#" class="categories__link">ОФД</a>
+                                <a href="#" class="categories__link" data-category="ofd">ОФД</a>
                             </li>
                             <li class="categories__item">
-                                <a href="#" class="categories__link">Электронные подписи</a>
+                                <a href="#" class="categories__link" data-category="elect-podpys">Электронные подписи</a>
                             </li>
                             <li class="categories__item">
-                                <a href="#" class="categories__link">Расходные материалы</a>
+                                <a href="#" class="categories__link" data-category="rashod-material">Расходные материалы</a>
                             </li>
                         </ul>
                     </div>
@@ -106,126 +107,2632 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="products clearfix">
-                        <div class="col-sm-3">
-                            <div class="product__item">
-                                <div class="product__item-title">
-                                    <h3>
-                                        Атол 30Ф
-                                    </h3>
-                                </div>
-                                <div class="product__item-wrap">
-                                    <div class="product__item-img">
-                                        <a href="/atol-30f" class="product__item-link">
-                                            <img src="img/atol-30f.jpg" alt="atol-30f">
-                                        </a>
+                    <div class="category-produts" data-category="online-kassa">
+                        <div class="products clearfix slider">
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 31Ф
+                                        </h3>
                                     </div>
-                                    <div class="product__item-options">
-                                        <div class="product__option">
-                                            Характеристики товара<br/>
-                                            + краткое описание
-                                        </div>
-                                        <div class="product__price">
-                                            3980
-                                            <span class="currency">Р</span>
-                                        </div>
-                                        <div class="product__btn">
-                                            <a href="/atol-30f" class="product__btn-descr">
-                                                Подробнее
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
                                             </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 32Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="product__item">
-                                <div class="product__item-title">
-                                    <h3>
-                                        Атол 30Ф
-                                    </h3>
-                                </div>
-                                <div class="product__item-wrap">
-                                    <div class="product__item-img">
-                                        <a href="/atol-30f" class="product__item-link">
-                                            <img src="img/atol-30f.jpg" alt="atol-30f">
-                                        </a>
+                    </div>
+                    <div class="category-produts" data-category="pos-system">
+                        <div class="products clearfix slider">
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 40Ф
+                                        </h3>
                                     </div>
-                                    <div class="product__item-options">
-                                        <div class="product__option">
-                                            Характеристики товара<br/>
-                                            + краткое описание
-                                        </div>
-                                        <div class="product__price">
-                                            3980
-                                            <span class="currency">Р</span>
-                                        </div>
-                                        <div class="product__btn">
-                                            <a href="/atol-30f" class="product__btn-descr">
-                                                Подробнее
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
                                             </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="product__item">
-                                <div class="product__item-title">
-                                    <h3>
-                                        Атол 30Ф
-                                    </h3>
-                                </div>
-                                <div class="product__item-wrap">
-                                    <div class="product__item-img">
-                                        <a href="/atol-30f" class="product__item-link">
-                                            <img src="img/atol-30f.jpg" alt="atol-30f">
-                                        </a>
+                    </div>
+                    <div class="category-produts" data-category="fix-nakopytel">
+                        <div class="products clearfix slider">
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
                                     </div>
-                                    <div class="product__item-options">
-                                        <div class="product__option">
-                                            Характеристики товара<br/>
-                                            + краткое описание
-                                        </div>
-                                        <div class="product__price">
-                                            3980
-                                            <span class="currency">Р</span>
-                                        </div>
-                                        <div class="product__btn">
-                                            <a href="/atol-30f" class="product__btn-descr">
-                                                Подробнее
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
                                             </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="product__item">
-                                <div class="product__item-title">
-                                    <h3>
-                                        Атол 30Ф
-                                    </h3>
-                                </div>
-                                <div class="product__item-wrap">
-                                    <div class="product__item-img">
-                                        <a href="/atol-30f" class="product__item-link">
-                                            <img src="img/atol-30f.jpg" alt="atol-30f">
-                                        </a>
+                    </div>
+                    <div class="category-produts" data-category="fix-register">
+                        <div class="products clearfix slider">
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
                                     </div>
-                                    <div class="product__item-options">
-                                        <div class="product__option">
-                                            Характеристики товара<br/>
-                                            + краткое описание
-                                        </div>
-                                        <div class="product__price">
-                                            3980
-                                            <span class="currency">Р</span>
-                                        </div>
-                                        <div class="product__btn">
-                                            <a href="/atol-30f" class="product__btn-descr">
-                                                Подробнее
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
                                             </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-produts" data-category="ofd">
+                        <div class="products clearfix slider">
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-produts" data-category="elect-podpys">
+                        <div class="products clearfix slider">
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-produts" data-category="rashod-material">
+                        <div class="products clearfix slider">
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__ite">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="product__item">
+                                    <div class="product__item-title">
+                                        <h3>
+                                            Атол 30Ф
+                                        </h3>
+                                    </div>
+                                    <div class="product__item-wrap">
+                                        <div class="product__item-img">
+                                            <a href="/atol-30f" class="product__item-link">
+                                                <img src="img/atol-30f.jpg" alt="atol-30f">
+                                            </a>
+                                        </div>
+                                        <div class="product__item-options">
+                                            <div class="product__option">
+                                                Характеристики товара<br/>
+                                                + краткое описание
+                                            </div>
+                                            <div class="product__price">
+                                                3980
+                                                <span class="currency"></span>
+                                            </div>
+                                            <div class="product__btn">
+                                                <a href="/atol-30f" class="product__btn-descr">
+                                                    Подробнее
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -239,7 +2746,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-2">
+                <div class="col-sm-2 col-xs-12">
                     <div class="footer-menu__title">
                         Продукция
                     </div>
@@ -261,7 +2768,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-2 col-xs-12">
                     <div class="footer-menu__title">
                         Услуги
                     </div>
@@ -281,7 +2788,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-2 col-xs-12">
                     <div class="footer-menu__title">
                         Интегратор
                     </div>
@@ -291,7 +2798,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-3 float-right">
+                <div class="col-sm-4 col-md-3 float-right col-xs-12">
                     <div class="phone-block footer__phone-block">
                         <div class="phone-icon">
                             <img src="img/phone-icon.png" alt="phone-icon">
@@ -318,5 +2825,58 @@
             </div>
         </div>
     </footer>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(document).ready(function(){
+            var scr_w=screen.width;
+            if (scr_w >= 1200) {
+                jQuery.each($('.slider'),function(i,val){
+                    $(val).bxSlider({
+                        slideWidth: 285,
+                        minSlides: 1,
+                        maxSlides: 4,
+                        slideMargin: 0
+                    });
+                });
+            } else if (scr_w >= 992 && scr_w < 1200) {
+                jQuery.each($('.slider'),function(i,val){
+                    $(val).bxSlider({
+                        slideWidth: 285,
+                        minSlides: 1,
+                        maxSlides: 3,
+                        slideMargin: 0
+                    });
+                });
+            } else if (scr_w >= 768 && scr_w < 992) {
+                jQuery.each($('.slider'),function(i,val){
+                    $(val).bxSlider({
+                        slideWidth: 285,
+                        minSlides: 1,
+                        maxSlides: 2,
+                        slideMargin: 0
+                    });
+                });
+            } else if (scr_w < 768) {
+                jQuery.each($('.slider'),function(i,val){
+                    $(val).bxSlider({
+                        slideWidth: 285,
+                        minSlides: 1,
+                        maxSlides: 1,
+                        slideMargin: 0
+                    });
+                });
+            }
+            $(".category-produts").addClass("hidden");
+            var active = $(".checked-category")[0];
+            active.click();
+        });
+    </script>
+
 </body>
 </html>

@@ -1,17 +1,17 @@
 .main-block {
-  padding: 70px 0 80px;
-  height: 850px;
+  padding: 70px 0 40px;
   background: url("../img/bg.jpg") bottom no-repeat;
   .title-page h2 {
     margin-top: 5px;
   }
   .catalog-description {
-    margin: 20px 0 40px;
+    margin: 20px 0 30px;
   }
   .products {
     margin: 60px 0 30px;
     text-align: center;
     .product__item {
+      max-width: 300px;
       &-wrap {
         box-shadow: 0 15px 30px rgba(0,0,0,.1);
       }
@@ -24,6 +24,10 @@
         border-bottom: 1px solid #cccccc;
         .product__item-link {
           display: block;
+          img {
+            width: 100%;
+            max-width: 240px;
+          }
         }
       }
       &-options {
@@ -43,6 +47,12 @@
           font-family: $main_font_familyBold;
           float: right;
           margin-top: 5px;
+          .currency {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background: url("../img/currency-rub.png") center no-repeat;
+          }
         }
         .product__btn {
           text-align: center;
